@@ -19,6 +19,8 @@ Backup your existing Bash startup files and copy to the root of your home direct
 cp .bashrc .bash_profile .profile ~/
 ```
 
+The files as is will cover Debian, PopOS, Ubuntu, Fedora, CentOS, MacOS and FreeBSD. They should be easily adapted to other Linux distributions and Windows Subsystem for Linux.
+
 ## Bash startup file execution
 
 **6.2 Bash Startup Files**
@@ -81,7 +83,7 @@ case $- in *i*) . ~/.bashrc ;; esac
 
 #### .bashrc
 
-This file contains your command prompt and all of your aliases and functions. It uses the Bash `$OSTYPE` variable to identify the operating system, and `/etc/os-release` to further subdivide linux distributions.
+This file contains your command prompt, aliases and functions. It uses the Bash `$OSTYPE` variable to identify the operating system, and `/etc/os-release` to further subdivide linux distributions.
 
 ```bash
 #==============================================================================
