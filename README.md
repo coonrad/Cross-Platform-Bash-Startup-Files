@@ -2,6 +2,23 @@
 
 The Bash shell ‘Bourne-Again SHell’ is installed by default on most operating systems. If you are working with multiple different operating systems, desktop environments, servers, virtual machines and containers. It is time-consuming to manage Bash startup files for each platform. A 'universal' set of Bash startup files can be easily maintained in a git repo or just copied in to place whenever a new system is activated.
 
+## Installation / Usage
+
+Clone this repository 
+
+```bash
+git clone https://github.com/coonrad/Cross-Platform-Bash-Startup-Files.git
+```
+
+Edit `.profile` to reflect your desired environment setup.  
+Edit `.bashrc` to reflect your desired command prompt, aliases, functions.  
+
+Backup your existing Bash startup files and copy to the root of your home directory:
+
+```bash
+cp .bashrc .bash_profile .profile ~/
+```
+
 ## Bash startup file execution
 
 **6.2 Bash Startup Files**
